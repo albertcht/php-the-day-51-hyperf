@@ -16,6 +16,13 @@ use App\Model\User;
 
 class IndexController extends AbstractController
 {
+    public function analysis()
+    {
+        return [
+            'required_files' => count(get_included_files())
+        ];
+    }
+
     public function hello()
     {
         $user = $this->request->input('user', 'Hyperf');

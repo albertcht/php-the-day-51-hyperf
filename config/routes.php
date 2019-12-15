@@ -15,3 +15,4 @@ use Hyperf\HttpServer\Router\Router;
 Router::get('/', 'App\Controller\IndexController@hello');
 Router::get('/sleep', 'App\Controller\IndexController@sleep');
 Router::get('/user', 'App\Controller\IndexController@user');
+Router::get('/analysis', 'App\Controller\IndexController@analysis');
